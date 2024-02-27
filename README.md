@@ -24,55 +24,31 @@ Within the ```metabolicpd``` folder, you will find three additional folders: ```
 ```
 ├───data
 │   └───kegg
-├───docs
-│   ├───build
-│   │   ├───coverage
-│   │   ├───doctrees
-│   │   └───html
-│   │       ├───_sources
-│   │       └───_static
-│   │           ├───css
-│   │           │   └───fonts
-│   │           └───js
-│   └───source
 ├───metabolicpd
 │   ├───examples
 │   ├───io
 │   ├───life
-└───tests
 ```
 
-### examples
+### examples Folder
 
 The ```examples``` folder holds python script files that demonstrate various use cases of the code base.
 
-### io
+### io Folder
 
 The ```io``` folder contains helper functions for reading in KEGG data files from ```data > kegg```.
 
-### life
+### life Folder
 
-The ```life``` folder contains the main object, ```network``` which is responsible for processing the data files and creating simulations.
+The ```life``` folder contains the main object, ```network```, which is responsible for processing the data files, creating simulations, and plotting results.
 
 
 ## Running the Examples
 
-In order to run the examples, open an ```example#.py``` file in an IDE such as Pycharm, Spyder, VSCode, etc. 
+In order to run the examples, open an ```example#.py```  file (found in ```metabolicpd > examples```) in an IDE such as Pycharm, Spyder, VSCode, etc. 
 Next, just run the example file.
 
-The script file should be structured in a way that automatically grabs the path to the ```data``` folder and then creates a ```network``` object and displays the results of the simulation.
-
-## Profiling Code
-To profile the code, i.e. to find how long each part of the code takes to run so as to optimize runtime, you can run 
-```
-poetry run python -m cProfile metabolicpd/simulation.py
-```
-to print the data to stdout. In order to print this information to a file (which is usually the best idea), use this
-```
-poetry run python -m cProfile -o simulation_stats metabolicpd/simulation.py
-```
-With a profile file, we can use the pstats module, e.g. using the repl, to analyse the data.
-See [this](https://docs.python.org/3/library/profile.html) link for documentation and examples
+The script file should grab the path to the ```data``` folder, then create a ```network``` object and display the result of the simulation.
 
 # KEGG Notes
 - [KGML Docs](https://www.kegg.jp/kegg/xml/docs/)
