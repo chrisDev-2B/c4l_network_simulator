@@ -45,15 +45,19 @@ The ```life``` folder contains the main object, ```network```, which is responsi
 
 ## Running the Examples
 
+Running the examples has been tested on both [VS Code](https://code.visualstudio.com/) and [PyCharm](https://www.jetbrains.com/pycharm/). The code will be easier to run if you are able to open entire folders within the application. 
+
+The example script file should grab the path to the ```data``` folder, then create a ```network``` object and display the result of the simulation.
+
 To run the examples:
-1. Clone the repo to your local machine
-2. Open the folder as a project in an IDE, such as Pycharm, VSCode, etc.
-3. Open an ```example#.py``` file and run it - these files are found in ```metabolicpd > examples```
+1. Clone the repo to your local machine.
+2. From VS Code or your IDE, open the repo as a project/folder.
+3. From the navigation pane (typically on the left-hand-side of the application), open ```example#.py``` (found in ```metabolicpd > examples```)
+4. Run the ```example#.py``` file.
+5. If the example runs successfully, a plot of the node trajectories will display along with some text outputted in the console.
 
 
-The script file should grab the path to the ```data``` folder, then create a ```network``` object and display the result of the simulation.
-
-# KEGG Notes
+### KEGG Notes
 - [KGML Docs](https://www.kegg.jp/kegg/xml/docs/)
 - [Pathway with gene information](https://www.genome.jp/kegg-bin/show_pathway?mtu01200))
 - [Pathway without gene info](https://www.genome.jp/kegg-bin/show_pathway?rn01200))
