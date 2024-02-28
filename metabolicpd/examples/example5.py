@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 
 # import numpy as np
-
+from os import getcwd
+import sys
+sys.path.append(getcwd())
 from metabolicpd.io.kegg_pathway import network_from_KGML
 from metabolicpd.life import network
 from metabolicpd.life.virtual_nodes import add_nodes

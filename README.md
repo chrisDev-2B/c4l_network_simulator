@@ -45,8 +45,11 @@ The ```life``` folder contains the main object, ```network```, which is responsi
 
 ## Running the Examples
 
-In order to run the examples, open an ```example#.py```  file (found in ```metabolicpd > examples```) in an IDE such as Pycharm, Spyder, VSCode, etc. 
-Next, just run the example file.
+To run the examples:
+1. Clone the repo to your local machine
+2. Open the folder as a project in an IDE, such as Pycharm, VSCode, etc.
+3. Open an ```example#.py``` file and run it - these files are found in ```metabolicpd > examples```
+
 
 The script file should grab the path to the ```data``` folder, then create a ```network``` object and display the result of the simulation.
 

@@ -3,6 +3,9 @@
 # example2: most basic example, uses default for almost everything
 import numpy as np
 from os.path import dirname, abspath, join
+from os import getcwd
+import sys
+sys.path.append(getcwd())
 from metabolicpd.life import network
 
 if __name__ == "__main__":
