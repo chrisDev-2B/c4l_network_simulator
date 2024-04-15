@@ -57,6 +57,36 @@ To run the examples:
 5. If the example runs successfully, a plot of the node trajectories will display along with some text outputted in the console.
 
 
+## Example Explanation
+Sample output from the examples within the ```examples``` folder is held with ```example_plots``` within the main directory.
+Each example serves to demonstrate a specific use case of the network simulator, below is a brief outline of each example and the network simulator capability it is demonstrating:
+
+### Example 1
+Example 1 is simulating a subsection of the  [Parkinson's Disease Map](https://pdmap.uni.lu/minerva/) from the University of Luxembourg and the Systems Biology Institute, Tokyo.
+```example1.py``` demonstrates the ability to fix a specific node within a network to either a given value (as is done for "a_syn_0") or a provided trajectory (as is done for "gba_0").
+Additionally, you are able to set initial conditions for the nodes within the network - within this example, we set the starting value of "clearance_0" to 0.
+
+### Example 2
+Example 2 is simulating a subsection of the central carbon metabolism within Mycobacterium Tuberculosis. The network information is taken from [KEGG](https://www.genome.jp/kegg/).
+Within this example, we show that:
+1. The starting masses of the nodes can be set (bulk setting of initial conditions)
+2. The value of the fluxes between the edges can be set
+
+### Example 3
+Example 3 provides a simulation of a basic network with 3 nodes. Example 3 demonstrates that the dynamics assigned to edges within the network can be non-trivially assigned.
+A ```min_min``` function is defined, and used for hyperedges within the network, by being passed to the ```min_func``` arg in the network object call.
+
+
+### Example 4
+Example 4 demonstrates the ability of the simulator to "complete" networks which do not have an equilibria due to network topology.
+A .csv file containing edges for a network without an equilibria can be "completed" to include "virtual nodes" which facilitate the existence of an equilbria.
+Within this example, we are simulating the subsection of the [Parkinson's Disease Map](https://pdmap.uni.lu/minerva/); however, we show that you can make multiple calls to the ```basic_plot``` function of a network object after you can run a single simulation.
+
+
+### Example 5
+Example 5 provides an example of dynamically fetching a network from the [KEGG Database](https://www.genome.jp/kegg/) using a wrapper of their API.
+This network is then simulated.
+
 ### KEGG Notes
 - [KGML Docs](https://www.kegg.jp/kegg/xml/docs/)
 - [Pathway with gene information](https://www.genome.jp/kegg-bin/show_pathway?mtu01200))

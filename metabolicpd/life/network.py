@@ -364,7 +364,8 @@ def basic_plot(
         plt.plot(result["t"], result["y"][i], label=mtb_names[label_idx])
         label_idx = label_idx + 1
     plt.ylim(ylim)
-    plt.xlabel("$t$")  # the horizontal axis represents the time
+    plt.xlabel("Time")  # the horizontal axis represents the time
+    plt.ylabel("Metabolite Level")
     plt.legend()  # show how the colors correspond to the components of X
     sns.despine(offset=10, trim=True)
     # plt.savefig("latest.png")
