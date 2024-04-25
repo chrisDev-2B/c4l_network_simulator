@@ -2,16 +2,13 @@
 
 # example2: most basic example, uses default for almost everything
 import numpy as np
-from os.path import dirname, abspath, join
-from os import getcwd
-import sys
-sys.path.append(getcwd())
+from os.path import join
 from metabolicpd.life import network
+
 
 if __name__ == "__main__":
 
-    file_path = abspath(__file__)
-    data_directory = join(dirname(dirname(dirname(file_path))), 'data')
+    data_directory = 'data'
     network_name = 'central_carbon_tb.csv'
 
     # Another Example Case for a network from another paper

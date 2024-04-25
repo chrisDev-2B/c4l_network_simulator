@@ -1,18 +1,14 @@
 # -*- coding: utf-8 -*-
 
 # import numpy as np
-from os import getcwd
-import sys
-sys.path.append(getcwd())
 from metabolicpd.io.kegg_pathway import network_from_KGML
 from metabolicpd.life import network
 from metabolicpd.life.virtual_nodes import add_nodes
-from os.path import dirname, abspath, join
+from os.path import join
 
 if __name__ == "__main__":
 
-    file_path = abspath(__file__)
-    data_directory = join(dirname(dirname(dirname(file_path))), 'data')
+    data_directory = 'data'
     kegg_directory = join(data_directory, 'kegg')
     network_name = 'mtu01200'
 

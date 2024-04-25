@@ -30,6 +30,9 @@ Within the ```metabolicpd``` folder, you will find three additional folders: ```
 │   ├───life
 ```
 
+**In order to run files for this project, the working directory must be set to the parent folder
+of ```data``` and ```metabolicpd```.**
+
 ### examples Folder
 
 The ```examples``` folder holds python script files that demonstrate various use cases of the code base.
@@ -47,7 +50,9 @@ The ```life``` folder contains the main object, ```network```, which is responsi
 
 Running the examples has been tested on both [VS Code](https://code.visualstudio.com/) and [PyCharm](https://www.jetbrains.com/pycharm/). The code will be easier to run if you are able to open entire folders within the application. 
 
-The example script file should grab the path to the ```data``` folder, then create a ```network``` object and display the result of the simulation.
+The example script files should be run with a working directory of the parent folder of both ```data``` and ```metabolicpd```.
+
+The example script files create a ```network``` object and display the result of the simulation.
 
 To run the examples:
 1. Clone the repo to your local machine.

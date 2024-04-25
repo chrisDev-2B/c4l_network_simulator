@@ -1,17 +1,13 @@
 # -*- coding: utf-8 -*-
 
 import numpy as np
-from os.path import dirname, abspath, join
-from os import getcwd
-import sys
-
-
+from os.path import join
 from metabolicpd.life import network
+
 
 if __name__ == "__main__":
 
-    file_path = abspath(__file__)
-    data_directory = join(dirname(dirname(dirname(file_path))), 'data')
+    data_directory = 'data'
     network_name = 'simple_pd_network.csv'
 
     s = network.Metabolic_Graph(
